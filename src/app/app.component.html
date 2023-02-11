@@ -1,0 +1,18 @@
+
+<select (change)="monthchanged($event)">
+  <option  *ngFor="let month of months;" value="{{month}}">{{month}}</option>
+</select>
+<hr />
+Enter name <br />
+<input type="text" value="{{name}}" (input)="textInput($event)"/><br />
+<button (click)="clicked()">click</button>
+
+{{name}}
+
+<hr />
+
+Two-way Binding
+
+<input type="text" [(ngModel)]="country"/>
+
+{{ country }}
